@@ -57,23 +57,22 @@ public class C0511_10 {
 				
 				break; // switch 단계
 			case 2:
+				//출력
 				System.out.println("이름\t국어\t영어\t수학\t합계\t평균");
 				System.out.println("-----------------------------------------");
 				for(int i=0;i<count;i++) {
 					System.out.printf("%s\t%d\t%d\t%d\t%d\t%.2f\n",name[i],kor[i],eng[i],math[i],total[i],avg[i]);
+			
+				}//for
+				
+				break;
+				
 			}//switch
-
-					
-					
-					
-					
-					
+			
 					
 		}//while
 		
 		
-	}
+	}//main
 
-}
-	
-}
+}//class
