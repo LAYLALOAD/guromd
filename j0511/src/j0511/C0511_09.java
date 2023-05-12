@@ -27,7 +27,7 @@ public class C0511_09 {
 			
 			//자동계산
 			total[i] = kor[i] +eng[i] + math[i];
-			avg[i] = total[i]/5.0;
+			avg[i] = total[i]/3.0;
 		}
 		
 		
