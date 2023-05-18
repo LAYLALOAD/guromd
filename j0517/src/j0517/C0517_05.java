@@ -12,22 +12,23 @@ public class C0517_05 {
 		C0517_05 c = new C0517_05();
 		//변수선언
 		int[] num = new int[3];
-		
+		double[] avg = new double[1];
 		String result="";
 				
 		for(int i=0;i<3;i++) {
 			System.out.println((i+1)+"번째 숫자를 입력하세요.");
 			num[i] = scan.nextInt();
 		}//3번만 입력 - 10 20 30,  90 90 80
-		result = c.average(num[0], num[1], num[2]); //참조변수명.메소드명
-//		System.out.println("평균 : "+result);
+		result = c.average(num[0], num[1], num[2], avg); //참조변수명.메소드명
+		System.out.println("평균 : "+ avg[0]);
 		System.out.println("합격여부 : "+result);
 
 	}//main
 
 	//합격 불합격 메소드 만들기
-	String average(int a, int b, int c) {
+	String average(int a, int b, int c, double[] avg) {
 		String result = "";
+		avg[0]= (a+b+c)/3.0;
 		if(((a+b+c)/3.0)>=60) {
 			result = "합격";
 		}else {
