@@ -53,7 +53,7 @@ public class C0516_02 {
 					}
 					
 					//score[i][0] 국어, score[i][1] 영어, score[i][2] 수학
-					for (int j=0;j<score[i].length-1;j++) { //score에서 합계 빼고 입력받음
+					for (int j=0;j<score[i].length-1;j++) { //score에서 합계 빼고 입력받음 
 						System.out.println(title[j+1]+"점수를 입력하세요.");
 						score[i][j] = scan.nextInt();
 					}
