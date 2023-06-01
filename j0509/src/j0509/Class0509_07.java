@@ -16,7 +16,7 @@ public class Class0509_07 {
 		input = scan.nextInt();
 				
 		//3. 출력
-		int answer = (input%2)?"짝수입니다.""홀수입니다.";
+		String answer = (input%2==0)?"짝수입니다.":"홀수입니다.";
 		System.out.println(answer);
 
 		
