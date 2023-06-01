@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class StuMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner scan = new Scanner(System.in);
 		StuProcess sp = new StuProcess();
 		ArrayList<Student> list = new ArrayList<>(); //데이터 저장하는 컬렉션
 		int choice = 0; //입력받는 변수
+		list = sp.stuRead(); //데이터 가져오기
 		
 		while(true) {
 			System.out.println("[ 학생성적처리 프로그램 ]");
@@ -30,17 +31,7 @@ public class StuMain {
 			switch(choice) {
 			case 1:
 				//StuProcess 클래스에 있는 메소드 호출
-				list = sp.stuInput();
-				System.out.println("학번: "+list.get(0).getStuNo());
-				System.out.println("이름: "+list.get(0).getName());
-				System.out.println("학번: "+list.get(1).getStuNo());
-				System.out.println("이름: "+list.get(1).getName());
-				
-				
-				
-				
-				
-				
+				sp.stuInput();
 				break;
 			}
 			
