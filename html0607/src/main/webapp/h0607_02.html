@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form</title>
+	</head>
+	<body>
+	  <form action="re.html" method="get">
+	    <label>아이디</label>
+	    <input type = "text" name = "userId" maxlength = "5" required autofocus placeholder="아이디는 5자리 이상">
+	    <input type = "hidden" name = "ip" value="192.168.0.249">
+	    <br>
+	    <label>패스워드</label>
+	    <input type ="password" name="userPw" placeholder="비번은 영어로" required>
+	    <br>
+	    <label>성별</label><br>
+	    <input type = "radio" name="gender" id="male" value="male">
+	    <label for="male">남자</label>
+	    <input type = "radio" name="gender" id="female" value="female" checked>
+	    <label for="female">여자</label>
+	    <input type="radio" name="gender" id="neutral" value="neutral">
+	    <label for="neutral">중성</label>
+	    <br>
+	    <label>취미</label><br>
+	    <input type="checkbox" name="hobby" id="game" value="game">
+	    <label for="game">게임</label>
+	    <input type ="checkbox" name="hobby" id="golf" value="golf" checked>
+	    <label for="game">골프</label>
+	    <input type ="checkbox" name="hobby" id="book" value="book">
+	    <label for="game">독서</label>
+	    <input type ="checkbox" name="hobby" id="music" value="music" checked>
+	    <label for="game">음악</label>
+	    <input type ="checkbox" name="hobby" id="running" value="running">
+	    <label for="game">조깅</label>
+		<br>
+		<label>날짜</label>
+	    <input type="date" name="date">
+	    <br>
+		<label>시간</label>
+	    <input type="time" name="time">
+	    <br>
+	    <label>전공</label><br><!-- label: form에서 글자입력할때 쓰는 태그 -->
+	    <select name="major"><!-- name: 변수선언  -->
+	      <option value="">전공선택</option>
+	      <option value="archi">건축공학과</option>
+	      <option value="mechanic">기계공학과</option>
+	      <option value="indust" selected>산업공학과</option>
+	    </select>
+	    <br>
+	    <textarea name="content" rows="8" cols="40">안녕하세요.</textarea>
+	    <br>
+	    
+	    
+	    <!-- 
+	    <label>개수</label>
+	    <input type="text" value="10" readonly>
+	    <br>	
+	    <label>검색어</label>
+	    <input type="search" name="search">
+	    <br>
+	    <label>이메일</label>
+	    <input type="email" name ="email">
+	    <br>
+	    <label>URL</label>
+	    <input type="url" name ="url">
+	    <br> 
+	    -->
+	    <input type="submit" value="전송">
+	    <button type="button">전송</button><!-- type을 스지 않으면, submit처럼 넘어간다. 주로 javascript와 함께 쓴다. -->
+	    <input type="reset" value="초기화">
+	    
+	  </form>
+	</body>
+</html>
