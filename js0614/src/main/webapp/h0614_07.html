@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<title>클래스</title>
+		<style>
+		  div{width: 200px; height: 200px; border: 1px solid black;}
+		  .st{border-radius: 20%;}
+		  .on{background: yellow;}
+		  .off{background: white; border: 5px solid black;}
+		</style>
+		<script>
+		  $(function(){
+			  
+		  });
+		  
+		  function btn(){
+			$("div").toggleClass("on");  //토글클래스 (37번 라인에 class로 정의한 st와 on사이에서 토글한다.)
+			
+		  }
+		  
+		  function btn1(){
+			$("div").addClass("on");  //클래스를 추가 시키는 것
+		    $("div").removeClass("off");  
+			
+		  }
+		  function btn2(){
+			$("div").removeClass("on");
+			$("div").addClass("off");  
+		  }
+		  
+		  
+		</script>
+	</head>
+	<body>
+	  <div class="st on"></div>
+	  <button onclick="btn()">토글 클래스</button>
+	  <button onclick="btn1()">클래스 추가</button>
+	  <button onclick="btn2()">클래스 삭제</button>
+	
+	</body>
+</html>
