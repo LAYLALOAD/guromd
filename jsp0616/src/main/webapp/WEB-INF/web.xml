@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>jsp0616</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>main.jsp</welcome-file><!-- http://localhost:8080/jsp0616/ 입력시 뒤에 main 표기 없이 바로 메인페이지로 이동 -->
+  </welcome-file-list>
+  <!-- error 설정: 에러의 상황에 맞게 에러페이지를 열어주세요 라는 의미 -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/j0616_05_error404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/j0616_05_error500.jsp</location>
+  </error-page>
+</web-app>
