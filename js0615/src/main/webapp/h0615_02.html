@@ -24,7 +24,7 @@
 					  
 					  for(let i=0;i<data.length;i++){
 						  arrX.push(data[i].name);
-						  arrX.push(data[i].total);
+						  arrY.push(data[i].total);
 					  }
 					  console.log(arrX);
 					  console.log(arrY);
@@ -37,7 +37,7 @@
 					    data: {
 					      labels: arrX,
 					      datasets: [{
-					        label: '학생성적표',
+					        label: title,
 					        data: arrY,
 					        borderWidth: 1
 					        
