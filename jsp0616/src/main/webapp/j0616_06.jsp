@@ -15,8 +15,8 @@
 	<jsp:useBean id="student" class="com.java.www.Student" />
 	
 	
-	<%-- <!-- setProperty: 데이터 값을 설정 할 때 사용 -->
-	<!-- j0616_06.jsp 실행할 때 사용 -->	 
+	<!-- setProperty: 데이터 값을 설정 할 때 사용 -->
+	<%-- <!-- j0616_06.jsp 실행할 때 사용 -->	 
 	<jsp:setProperty property="stuNo" name="student" value="1"/>
 	<jsp:setProperty property="name" name="student" value="honggildong"/>
 	<jsp:setProperty property="kor" name="student" value="100"/>
@@ -25,7 +25,7 @@
 	 
 
 	<!-- j0616_07.jsp 실행할 때 사용 -->
-	<jsp:setProperty property="*" name="student" /> <!-- "*": 전체를 받는다.  -->  
+	<jsp:setProperty property="*" name="student" /> <!-- "*": 전체를 받는다.  -->
 	
 	
 	

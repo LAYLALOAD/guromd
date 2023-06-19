@@ -7,18 +7,20 @@ public class Student {
 		
 	}
 	
-	private int stuNo;
+	private String stuNo;
 	private String name;
 	private int kor;
 	private int eng;
 	private int math;
 	
 
-	public int getStuNo() {
+	
+
+	public String getstuNo() {
 		return stuNo;
 	}
 
-	public void setStuNo(int stuNo) {
+	public void setstuNo(String stuNo) {
 		this.stuNo = stuNo;
 	}
 
