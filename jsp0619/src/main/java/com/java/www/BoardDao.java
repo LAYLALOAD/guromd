@@ -73,7 +73,7 @@ public class BoardDao {
 	    	}catch(Exception e2){e2.printStackTrace();}
 	    }
 		return list;
-	}//selectMember
+	}//selectBoard
 	
 	
 }//class
